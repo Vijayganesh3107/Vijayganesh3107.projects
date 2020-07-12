@@ -31,7 +31,10 @@ btn_3.setAttribute("data-operations","");
 var btn_4=document.createElement("button");
 btn_4.setAttribute("class","operations");
 btn_4.setAttribute("id","rspc");
-btn_4.innerHTML="inverse";
+var sup=document.createElement("sup");
+sup.innerHTML="-1";
+btn_4.innerHTML="x";
+btn_4.appendChild(sup);
 btn_4.setAttribute("data-operations","");
 var btn_5=document.createElement("button");
 btn_5.setAttribute("class","numbers")
