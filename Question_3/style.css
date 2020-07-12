@@ -1,0 +1,106 @@
+.container{
+    max-width: 1300px;
+
+}
+.btndiv{
+    padding-left: 15px;
+}
+.listview{
+background-color: rgb(19, 168, 255);
+color: white;
+}
+.gridview{
+background-color: tomato;
+color: white;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+
+}
+.wrapper-1,.wrapper-2,.wrapper-3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.wrapper-1-top{
+    flex-basis: 50%;
+    border: 1px solid black;
+}
+.wrapper-1-bottom{
+    flex-basis: 50%;
+    border: 1px solid black;
+    margin-top:15px;
+}
+
+.wrapper-2-top{
+    flex-basis: 50%;
+    border: 1px solid black;
+    
+}
+.wrapper-2-bottom{
+    flex-basis: 50%;
+    border: 1px solid black;
+    margin-top:15px;
+}
+.wrapper-3-top{
+    flex-basis: 50%;
+    border: 1px solid black;
+}
+.wrapper-3-bottom{
+    flex-basis: 50%;
+    border: 1px solid black;
+    margin-top:15px;
+}
+
+
+
+
+/* .wrapper .child1,.wrapper .child2,.wrapper .child3,.wrapper .child4,.wrapper .child5,.wrapper .child6{
+    flex-basis: 33.33%;
+    border:1px black solid;
+    /* width: 400px; */
+} */
+
+
+
+
+
+
+.child1 .imagediv{
+    max-width: 100%;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-left,.footer-right{
+    flex-basis: 50%;
+}
+.footer-right .footerbtn{
+    margin-top: 15px;
+}
+.addtocart{
+    background-color: rgb(3, 190, 3);
+    color: white;
+}
+.child1-p-container{
+    text-align: left;
+}
+.child1-h3{
+    margin-left: 5px;
+}
+
+.movemntdiv{
+    margin-left: 15px;
+}
+
+.child1-p-container .child1-p-1,.child1-p-container .child1-p-2,.child1-p-container .child1-p-3,.child1-p-container .child1-p-4{
+margin-bottom: -15px;
+}
+
+.maindiv{
+    margin-left: 110px;
+}
