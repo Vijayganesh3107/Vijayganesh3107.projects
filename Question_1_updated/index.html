@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="" method="POST" onsubmit="alertMessage()">
+        <div class="container">
+            <table class="table">
+                <tr class="row-1">
+                    <td> <label for="fullname">Full Name *</label> </td>
+                    <td> 
+                        <span> <i class="fa fa-user" aria-hidden="true"></i></span>
+                        <input type="text" name="fullname" id="fullname" required>   
+                    </td>
+                </tr>
+                <tr class="row-2">
+                    <td><label for="address-1">Address Line 1*</label></td>
+                    <td>
+                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <input type="text" name="address-1" id="address-1"required> 
+                    </td> 
+                </tr>
+                <tr class="row-3">
+                    <td>
+                        <label for="address-2">Address Line 2</label>
+                    </td>
+                    <td>
+                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <input type="text" name="address-1" id="address-1"> 
+                    </td>
+                </tr>
+                <tr class="row-4">
+                    <td>
+                        <label for="city">City*</label>
+                    </td>
+                    <td>
+                        <span> <i class="fa fa-home" aria-hidden="true"></i></span>
+                        <input type="text" name="city" id="city" required>  
+                    </td>
+                </tr>
+                <tr class="row-5">
+                    <td>
+                        <label for="state">State/Province/Region*</label> 
+                    </td>
+                    <td>
+                        <span> <i class="fa fa-home" aria-hidden="true"></i></span>
+                        <input type="text" name="state" id="state" required> 
+                    </td>
+                </tr>
+                <tr class="row-6">
+                    <td>
+                        <label for="zip" id="zip1">PostalCode/ZIP Code*</label> 
+                    </td>
+                    <td>
+                        <span><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <input type="text" name="addreszip" id="zip" required> 
+                    </td>
+                </tr>
+                <tr class="row-7">
+                    <td>
+                        <label for="country">Country</label>
+                    </td>
+                    <td>
+                        <span> <i class="fa fa-list" aria-hidden="true"></i></span>
+                        <select name="country" id="country" required>
+                            <option value=" null">--Select a Country--</option>
+                            <option value="india">India</option>
+                            <option value="australia">Australia</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Srilanka">Srilanka</option>
+                            <option value="Thailand">Thailand</option>
+                
+                        </select>
+                    </td>
+                </tr>
+                <tr class="row-8">
+                    <td><label for="email">Email*</label></td>
+                    <td>
+                        <span> <i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="email" name="email" id="email" required>        
+                    </td>
+                </tr>
+                <tr class="row-9">
+                    <td><label for="phone">Phone Number</label></td>
+                    <td>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <input type="text" name="phone" id="phone">
+                    </td>
+                </tr>
+            </table>
+
+<div class="btndiv">
+<button type="submit" >Submit</button>
+</div>
+        </div>
+
+</form>
+</body>
+</html>
