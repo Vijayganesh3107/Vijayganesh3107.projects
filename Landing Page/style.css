@@ -1,0 +1,193 @@
+.div-1,.borderbottom{
+    border-bottom: 1px solid black;
+}
+.div-3 h1{
+    font-size: 108px;
+    
+}
+.p1{
+    font-size: 30px;
+}
+.img{
+    width:350px;
+    height:250px;
+    background-color: grey;
+    z-index: 0;
+}
+.rounded-page-img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -90px;
+    margin-left: 300px;
+    font-size: 15px;
+    z-index: 1;
+}
+.my-container{
+    max-width: 500px;
+    text-align:justify ;
+}
+
+.img-1-right{
+    background-color: grey;
+    width: 700px;
+    height:600px;
+}
+
+.p-right-index{
+    margin-top: -200px;
+}
+
+.rounded-page-img1{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -120px;
+    font-size: 15px;
+}
+.rounded-page-img2{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -93px;
+    font-size: 15px;
+    margin-left: 300px;
+}
+
+.rounded-page-img-left-row{
+
+}
+.right-down-container{
+    max-width: 200px;
+
+}
+.my-container-1{
+    max-width: 900px;
+    text-align:justify ;
+}
+.container-right-down{
+    margin-left: 30px;
+    margin-top:-px;
+}
+
+.right-p-1{
+    width:350px;
+    text-align: justify;
+}
+
+.right-p-2{
+    width:350px;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+.content-container{
+    border-bottom: 1px blcak solid;
+}
+.slant-head{
+    background-color: brown;
+    display: inline-block;
+    transform: skew(10deg);
+    transform-origin: bottom;
+    z-index: 1;
+    
+}
+.slant-head-1{
+    background-color: brown;
+    display: inline-block;
+    transform: skew(10deg);
+    transform-origin: bottom;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    z-index: 1;
+    
+}
+.slant{
+    margin-bottom:-15px;
+    z-index: 1;
+}
+
+.my-container-pg2{
+    max-width: 350px;
+    text-align:justify ;
+}
+
+.image-row-1pg2{
+    background-color: grey;
+    width:100%;
+    height:670px;
+}
+.text-inside-img-row-1-pg2{
+    margin-top:-160px
+}
+
+.rounded-img-1-pg2{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -155px;
+}
+
+.img-right-row-2-pg-2{
+    background-color: grey;
+     width: 100%;
+    height:275px; 
+    z-index: 0;
+    margin-top: -30px;
+}
+.rounded-img-2-pg2{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -93px;
+    
+}
+.slant-head-pg2{
+    background-color: brown;
+    display: inline-block;
+    transform: skew(10deg);
+    transform-origin: bottom;
+    z-index: 1;
+
+}
+.div-border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: brown;
+}
+
+.img-bottom-pg-2{
+    width: 100%;
+    height:325px;
+    background-color: grey;
+}
+.text-inside-img-row-3-pg2{
+    margin-top:-100px
+}
+.bolder-p-pg-2{
+    font-size: 30px;
+}
+
+
+.word-break{
+    word-wrap: break-word;
+}
+
+  
