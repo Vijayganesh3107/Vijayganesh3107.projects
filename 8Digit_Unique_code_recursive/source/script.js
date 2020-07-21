@@ -1,42 +1,25 @@
-var str="";
-function generateRandomNumber(){
+var str = "";
+var arr = [];
+var count = 0;
+function generateRandomNumber() {
+  no = (Math.floor(Math.random() * (9 - 0)) + 0).toString();
+  if (arr.length == 0) {
+    arr.push(no);
+  } else {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] == no) break;
+      else {
+        count++;
+        continue;
+      }
+    }
+    if (count == arr.length) {
+      arr.push(no);
+    }
+    count = 0;
+  }
 
-    str+=(Math.floor(Math.random()*(9-0))+0).toString();
-   if(str.length<8)
-    generateRandomNumber();
-       
-    
-    
-    
+  if (arr.length < 8) generateRandomNumber();
 }
 generateRandomNumber();
-console.log(`The Gnerated random number is ${str}`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(`The Gnerated random number is ${arr.join("")}`);
