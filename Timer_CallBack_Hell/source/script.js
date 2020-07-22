@@ -79,8 +79,9 @@ function a(no, func) {
                   function j(no, func) {
                     var no = res1;
                     var res0 = func(no);
+                    if (res0 == 0) res0 = "Happy Morning";
                     setTimeout(() => {
-                      div.innerHTML = "Happy Morning";
+                      div.innerHTML = res0;
                       document.body.style.background = "red";
                     }, 10000);
                   }
