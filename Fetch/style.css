@@ -1,0 +1,22 @@
+.card {
+  height: 450px;
+  border: 1px black solid;
+  box-shadow: 28px 13px 5px 0px rgba(201, 189, 201, 1);
+  background-color: rgb(253, 250, 250);
+  border-radius: 10px;
+}
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 250px;
+  /* transform: translateX(50%); */
+}
+.flag {
+  width: 100%;
+}
+.image {
+  max-width: 50%;
+}
+body {
+  background-color: wheat;
+}
