@@ -6,6 +6,8 @@ f.then((request) => {
 })
   .then((data) => {
     var len = data.length;
+    var cont = document.createElement("div");
+    cont.setAttribute("class", "container justify-content-xl-center");
     for (let i = 0; i < Math.ceil(len / 4); i++) {
       var div = document.createElement("div");
       div.setAttribute("class", "row mb-5");
@@ -57,7 +59,8 @@ f.then((request) => {
           div.appendChild(divcard1);
         }
       }
-      document.body.append(div);
+      cont.appendChild(div);
+      document.body.append(cont);
     }
   })
   .catch((error) => console.log(error));
