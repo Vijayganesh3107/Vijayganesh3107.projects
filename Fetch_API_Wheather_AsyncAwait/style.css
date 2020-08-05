@@ -1,0 +1,14 @@
+.imgdiv {
+  max-width: 80%;
+}
+/* .imgdiv:hover {
+ 
+} */
+
+.image {
+  width: 90%;
+}
+
+.image:hover {
+  cursor: pointer;
+}

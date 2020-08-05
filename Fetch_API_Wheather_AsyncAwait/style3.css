@@ -1,0 +1,39 @@
+.dipslaydiv {
+  border: 1px solid black;
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  /* width: 500px;
+  margin-left: 250px;
+  border-radius: 10px; */
+}
+#movie {
+  display: inline;
+}
+#movie:hover {
+  background-color: rgb(243, 239, 239);
+}
+.displaynone {
+  display: none;
+}
+#moviename {
+  font-size: 30px;
+}
+.movieimg {
+  width: 70%;
+  /* position: relative;
+  top: 50%;
+  left: 30%; */
+  text-align: center;
+  margin-left: 30px;
+}
+#image {
+  max-width: 100%;
+}
+/* .btn1 {
+  text-align: center;
+  margin-left: -180px;
+} */
+/* button {
+  position: relative;
+  top: 50%;
+} */
