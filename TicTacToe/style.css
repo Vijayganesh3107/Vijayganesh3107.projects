@@ -1,0 +1,80 @@
+.cell {
+  height: 100px;
+  width: 100px;
+}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #ff0000,
+    #fe6b00,
+    #f1a300,
+    #d7d300,
+    #b0ff00
+  );
+  height: 760px;
+}
+table {
+  position: relative;
+  bottom: 20%;
+  left: 40%;
+  /* border: 1px solid black; */
+  align-self: center;
+}
+.Border {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.Border1 {
+  border-bottom: 2px solid black;
+}
+.Border2 {
+  border-right: 2px solid black;
+}
+.board {
+  text-align: center;
+  margin-top: 130px;
+  margin-right: 330px;
+}
+#message {
+  font-size: 60px;
+  text-align: center;
+}
+.displaynone {
+  display: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.board.Title {
+  text-align: center;
+}
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
