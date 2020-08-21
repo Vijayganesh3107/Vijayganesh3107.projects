@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="bundle.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-xl-center">Music Player</h1>
+      <h5 class="text-xl-center">
+        Note: After clicking the add to playlist,Click the Redict to Playlist to
+        see the Playlist
+      </h5>
+      <div class="mb-xl-2 text-right">
+        <button class="btn btn-primary mr-xl-5" id="playlist">
+          Redirect To PLayList
+        </button>
+      </div>
+      <table class="table song-table text-xl-center">
+        <thead>
+          <th>Song Name</th>
+          <th>Artist</th>
+          <th>Album</th>
+          <th>Add to Playlist</th>
+        </thead>
+        <tbody id="song-body"></tbody>
+      </table>
+      <table class="table playlist-table text-xl-center">
+        <thead>
+          <th>Song Name</th>
+          <th>Play</th>
+        </thead>
+        <tbody id="playlist-body"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

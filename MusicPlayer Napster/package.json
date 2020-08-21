@@ -1,0 +1,35 @@
+{
+  "name": "musiq",
+  "version": "1.0.0",
+  "description": "typescript based web app",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev-build": "webpack --watch",
+    "serve": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashokumaran/Music-Web-App-Typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "music",
+    "player",
+    "web",
+    "app"
+  ],
+  "author": "Ashok Kumaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashokumaran/Music-Web-App-Typescript/issues"
+  },
+  "homepage": "https://github.com/Ashokumaran/Music-Web-App-Typescript#readme",
+  "devDependencies": {
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
