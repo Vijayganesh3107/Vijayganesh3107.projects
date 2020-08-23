@@ -47,7 +47,7 @@ export class PlayerClass {
         var play = <HTMLButtonElement>document.createElement("button");
         play.setAttribute("class", "btn btn-warning ml-xl-5");
         var i = <HTMLFontElement>document.createElement("i");
-        i.setAttribute("class", "fas fa-play ");
+        i.setAttribute("class", "fas fa-play");
         play.appendChild(i);
         play.addEventListener("click", () => {
           location.href = `${item.previewURL}`;
