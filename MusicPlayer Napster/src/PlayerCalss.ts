@@ -22,8 +22,8 @@ export class PlayerClass {
       var redirectPlaylist = <HTMLButtonElement>(
         document.getElementById("playlist")
       );
-      var playList = [];
-      playListTable.style.display = "none";
+
+      playListTable.classList.add("displaynone");
       const result = await fetch(
         "https://api.napster.com/v2.2/tracks/top?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4"
       );
@@ -44,22 +44,41 @@ export class PlayerClass {
         var playlistButton = <HTMLButtonElement>(
           document.createElement("button")
         );
+        var play = <HTMLButtonElement>document.createElement("button");
+        play.setAttribute("class", "btn btn-warning ml-xl-5");
+        var i = <HTMLFontElement>document.createElement("i");
+        i.setAttribute("class", "fas fa-play ");
+        play.appendChild(i);
+        play.addEventListener("click", () => {
+          location.href = `${item.previewURL}`;
+        });
         playlistButton.setAttribute("id", item.name + "-" + item.previewURL);
         playlistButton.innerHTML = "Add to playlist";
         playlistButton.setAttribute("class", "btn btn-success");
         playlistButton.addEventListener("click", () => {
+          var playList = [];
           playList.push(item.name + "-" + item.previewURL);
+          sessionStorage.setItem("song", `${playList}`);
         });
         var td4 = <HTMLTableDataCellElement>document.createElement("td");
         td4.appendChild(playlistButton);
+        td4.appendChild(play);
         tr.append(td1, td2, td3, td4);
         songBody.appendChild(tr);
       });
+
       redirectPlaylist.addEventListener("click", () => {
-        table.style.display = "none";
-        playListTable.style.display = "table";
-        redirectPlaylist.style.display = "none";
-        playList.forEach((item) => {
+        var homebtn = <HTMLButtonElement>document.getElementById("Home");
+        homebtn.addEventListener("click", () => {
+          redirectPlaylist.classList.remove("displaynone");
+          playListTable.classList.add("displaynone");
+          table.classList.remove("displaynone");
+        });
+        redirectPlaylist.classList.add("displaynone");
+        table.classList.add("displaynone");
+        playListTable.classList.remove("displaynone");
+        var song = sessionStorage.getItem("song").split(",");
+        song.forEach((item) => {
           var name = item.split("-")[0];
           var songLink = item.split("-")[1];
           var tr = <HTMLTableRowElement>document.createElement("tr");
