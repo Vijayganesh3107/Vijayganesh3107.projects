@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB Search</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script3.js" defer></script>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index1.html">Weather Display(Fetch)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html"
+            >Weather Display(Async Await)</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container justify-content-center">
+      <div class="col-xl-12 mt-xl-5">
+        <input
+          type="text"
+          placeholder="Type Movie's Name Here..."
+          id="movie"
+          class="col-xl-10"
+          value=""
+        />
+        <button type="submit" id="btn" class="btn-success">
+          Search
+        </button>
+      </div>
+      <div class="displaynone" id="display">
+        <p id="moviename"></p>
+        <div class="movieimg">
+          <img src="" alt=" " id="image" />
+        </div>
+        <p id="director"></p>
+        <p id="cast"></p>
+        <p id="language"></p>
+        <p id="runtime"></p>
+        <p id="release"></p>
+        <p id="Imdb"></p>
+      </div>
+      <h1 class="displaynone">Movie Not Found!!!</h1>
+      <div class="btn1"></div>
+    </div>
+  </body>
+</html>
