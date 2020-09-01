@@ -1,0 +1,94 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #14d0f7, #00e4e7, #00f2b7, #7df970, #e1f603);  
+    display: flex;
+    /* background-color: cadetblue; */
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    max-height:50vh;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color:black;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* bottom: 50%;
+    left: 50%; */
+}
+
+.clock .number{
+    --rotate:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(var(--rotate));
+    font-size: 27px;
+    color: white;
+}
+.clock .number1{ --rotate:30deg;}
+.clock .number2{ --rotate:60deg;}
+.clock .number3{ --rotate:90deg;}
+.clock .number4{ --rotate:120deg;}
+.clock .number5{ --rotate:150deg;}
+.clock .number6{ --rotate:180deg;}
+.clock .number7{ --rotate:210deg;}
+.clock .number8{ --rotate:240deg;}
+.clock .number9{ --rotate:270deg;}
+.clock .number10{ --rotate:300deg;}
+.clock .number11{ --rotate:330deg;}
+
+
+.clock .hand{
+    --rotation:0;
+    position: absolute;
+    background-color: black;
+    bottom: 50%;
+    left: 50%;
+    border-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.clock .hour{
+    height:38%;
+    width:8px;
+    background-color: white;
+}
+.clock .min{
+    height:45%;
+    width:6px;
+    background-color: white;
+}
+.clock .sec{
+    height:45%;
+    width:2px;
+    background-color: red;
+}
+
+.clock::after{
+    content: '';
+    position: absolute; 
+    width:20px;
+    height:20px;
+    background-color: red;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    z-index: 11;
+    transform: translate(-50%,-50%);
+
+}
+
