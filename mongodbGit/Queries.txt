@@ -1,0 +1,73 @@
+Query 1)
+
+db.class.insert([{
+         "name":"Vijay",
+         "primaryadress": "Mylapore Chennai",
+         "favoriteteacher":"Vijay",
+         "age":"23"
+     },
+     {
+         "name":"Jhon",
+         "primaryadress":"Kumbakonam",
+         "favoriteteacher":"Vijay",
+         "age":"23"
+     },
+     {
+         "name":"Ajay",
+         "primaryadress": "Adayar Chennai",
+         "favoriteteacher":"Vijay",
+         "age":"23"
+     },
+     {
+         "name":"Arun",
+         "primaryadress":" Jainagar Banglore",
+         "favoriteteacher":"Vijay",
+         "age":"23"
+     },
+     {
+         "name":"Neha Bhatia",
+         "primaryadress":"Dharavi Mumbai",
+         "favoriteteacher":"Vijay",
+         "age":"23"
+     },
+     {
+         "name":"Jai",
+         "primaryadress":" KK nagar Chennai",
+         "favoriteteacher":"Vijay",
+         "age":"23"
+     },
+     {
+         "name":"Hema",
+         "primaryadress":" new no 4 T nagar Chennai",
+         "favoriteteacher":"Anitha",
+         "age":"23"
+     },
+    {
+         "name":"Sai",
+         "primaryadress":"123 xyz nagar Chennai",
+         "favoriteteacher":"Anitha",
+         "age":"23"     
+    }
+    ]
+)
+
+
+Query 2)
+ db.class.find({name:"Arun"})
+
+Query3)
+db.class.update({name:"Vijay"},{$set:{primaryadress:"123 abc nagar Chennai"}})
+
+Query 4)
+db.class.find({age:{$gt:"12"}})
+
+Query 5)
+    db.class.find({name:"Ashwini"},{favoriteteacher:1,_id:0} )
+Query 6)
+ db.class.count()
+Query 7)
+db.class.find({primaryadress:{$regex:".*Chennai.*"}}).count()
+Query 8)
+db.class.find({favoriteteacher:"Anitha"}).count()
+
+
