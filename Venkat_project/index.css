@@ -1,0 +1,29 @@
+.carousel-item {
+  height: 30rem;
+}
+body {
+  background-color: rgb(228, 224, 224);
+}
+
+.images img {
+  width: 100%;
+}
+
+.history-content {
+  font-size: 30px;
+}
+
+.history {
+  background-color: rgb(228, 224, 224);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-media i:hover {
+  -webkit-box-shadow: 21px -4px 48px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 21px -4px 48px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 21px -4px 48px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
