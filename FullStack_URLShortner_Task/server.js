@@ -14,7 +14,7 @@ eveentemitter.on("email-trigger", (req, res) => {
     service: "gmail",
     auth: {
       user: "vijay.ganeshp95@gmail.com",
-      pass: "Chennai@7",
+      pass: "x123456",
     },
   });
   var mailoptions = {
